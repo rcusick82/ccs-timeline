@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+.body-container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.timeline   {
+    background-color: white;
+    height: 200px;
+    width: 300px;
+    margin: 0;
+    position: relative;
+}
+
+h2  {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+.date   {
+    background-color: #ff1c50;
+    color: white;
+    margin: 0px;
+    padding: 0;
+    width: 100px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.float-right  {
+    float: right;
+}
+
+.right::after  {
+    content: '';
+    width: 0;
+    height: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    position: absolute;
+    left: -3%;
+    top: 12%;
+}
+
+.left::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0px 10px 10px;
+    border-color: transparent transparent transparent white;
+
+
+    position: absolute;
+    top: 12%;
+    right: -3%;
+}
+.clearfix {
+    clear: both;
+}
+
+.margin-top {
+    margin-top: 100px;
+}
+
+.right-border {
+    height: 200px;
+    width: 300px;
+    position: relative;
+}
+
+.right-border::before   {
+    content: '';
+    height: 198%;
+    border: solid 2px #006693;
+    position: absolute;
+    right: -22%;
+    top: 0;
+}
+
+.left-border::after {
+    content: '';
+    height: 100%;
+    border: solid 2px #006693;
+    position: absolute;
+    left: -56px;
+    top: 0;
+}
